@@ -31,6 +31,7 @@ La agrupación conserva el total (244.355) y no pierde ninguna dimensión usada 
 app.py               aplicación Dash (diseño y callbacks); expone `server` para gunicorn
 preparar_datos.py    convierte los xlsx del DANE en data/*.csv
 data/                defunciones.csv.gz, municipios.csv, causas.csv
+capturas/            imágenes de la aplicación desplegada usadas en este README
 requirements.txt     dependencias con versión
 render.yaml          configuración de despliegue en Render
 .python-version      versión de Python para el despliegue
@@ -74,12 +75,31 @@ Dos filtros (sexo y departamento) actualizan los indicadores y los gráficos. La
 | 6 | Histograma | Defunciones por grupo de edad (30 grupos quinquenales y de la primera infancia del DANE) |
 | 7 | Barras apiladas | Defunciones por departamento, separadas por sexo (muestra todo el país) |
 
-### Hallazgos con todos los filtros en "Todos"
-- Total: 244.355 defunciones, de las cuales 13.077 son homicidios.
-- El mes con más defunciones es diciembre (21.678) y el de menos es febrero (17.974); febrero también es el más bajo por día (642 frente a 699 en diciembre).
-- El grupo de edad más frecuente es 80-84 años.
-- Las principales causas son el infarto agudo del miocardio (35.323), las enfermedades pulmonares obstructivas crónicas (15.804) y las agresiones con arma de fuego (9.273).
-- Las ciudades con más homicidios son Cali (1.242), Bogotá (1.154) y Medellín (638).
+### Capturas e interpretación (aplicación desplegada, filtros en "Todos")
+
+![Vista general](capturas/01_vista_general.png)
+Indicadores del año: 244.355 defunciones, 13.077 homicidios, diciembre como el mes con más muertes y 80-84 años como el grupo de edad más frecuente.
+
+![Mapa](capturas/02_mapa.png)
+Bogotá D.C. (38.760; 15,9 %), Antioquia (34.473; 14,1 %) y Valle del Cauca (28.443; 11,6 %) concentran las defunciones; con Atlántico suman 47,7 %. Es un reflejo de dónde vive más gente, no un mayor riesgo.
+
+![Líneas](capturas/03_lineas.png)
+Las muertes son estables durante el año. Diciembre (21.678), julio (21.372) y enero (21.354) son los meses más altos y febrero el más bajo (17.974), también por día (642 frente a 699 en diciembre).
+
+![Homicidios](capturas/04_homicidios.png)
+Cali (1.242), Bogotá (1.154) y Medellín (638) encabezan los homicidios y suman 3.034 casos (cerca de una cuarta parte del país). El 91,3 % de las víctimas son hombres. Son conteos; para comparar ciudades haría falta la población.
+
+![Circular](capturas/05_circular.png)
+Las diez ciudades con menos defunciones registraron una cada una, por eso el gráfico queda en empate. Hay 13 municipios con una sola defunción y 177 con diez o menos.
+
+![Causas](capturas/06_tabla.png)
+Primera causa: infarto agudo del miocardio (35.323), seguida por enfermedades pulmonares obstructivas crónicas (15.804) y agresiones con arma de fuego (9.273). Predominan las enfermedades crónicas.
+
+![Histograma](capturas/07_histograma.png)
+El pico está en 80-84 años (30.071); 63,4 % de las defunciones son de personas de 65 años o más y 3,0 % de menores de un año.
+
+![Apiladas](capturas/08_apiladas.png)
+Los hombres son 55,1 % de las defunciones y las mujeres 44,9 %. La proporción de hombres va de 51,7 % en Bogotá a 76,8 % en Guaviare.
 
 ### Limitaciones
 - El mapa usa burbujas ubicadas en el centro de cada departamento, calculado con las coordenadas de sus municipios; no dibuja los límites.
