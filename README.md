@@ -3,8 +3,8 @@
 Actividad 4 de Aplicaciones I, Maestría en Inteligencia Artificial, Universidad de La Salle.
 
 **Integrantes:** [COMPLETAR nombres del grupo]
-**Aplicación desplegada:** [COMPLETAR URL de Render]
-**Repositorio:** [COMPLETAR URL de GitHub]
+**Aplicación desplegada:** https://mortalidad-colombia-2019-x4ue.onrender.com
+**Repositorio:** https://github.com/haroldanco/mortalidad-colombia-2019
 
 ## 1. Introducción y objetivo
 
