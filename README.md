@@ -2,7 +2,7 @@
 
 Actividad 4 de Aplicaciones I, Maestría en Inteligencia Artificial, Universidad de La Salle.
 
-**Integrantes:** [COMPLETAR nombres del grupo]
+**Integrantes:** Harold Andrés Cortés López (grupo de una persona)
 **Aplicación desplegada:** https://mortalidad-colombia-2019-x4ue.onrender.com
 **Repositorio:** https://github.com/haroldanco/mortalidad-colombia-2019
 
@@ -76,7 +76,7 @@ Dos filtros (sexo y departamento) actualizan los indicadores y los gráficos. La
 
 ### Hallazgos con todos los filtros en "Todos"
 - Total: 244.355 defunciones, de las cuales 13.077 son homicidios.
-- El mes con más defunciones es diciembre; febrero tiene menos por tener menos días.
+- El mes con más defunciones es diciembre (21.678) y el de menos es febrero (17.974); febrero también es el más bajo por día (642 frente a 699 en diciembre).
 - El grupo de edad más frecuente es 80-84 años.
 - Las principales causas son el infarto agudo del miocardio (35.323), las enfermedades pulmonares obstructivas crónicas (15.804) y las agresiones con arma de fuego (9.273).
 - Las ciudades con más homicidios son Cali (1.242), Bogotá (1.154) y Medellín (638).
